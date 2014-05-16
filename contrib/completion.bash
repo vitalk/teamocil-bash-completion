@@ -7,8 +7,9 @@ __teamocil_complete_session() {
 }
 
 __teamocil_complete_option() {
+    local IFS=$'\n'
     local cur="${1}"
-    local options="--edit --here --layout --list --show"
+    local options="$(teamocil --help | sed -e 's/^[[:space:]]*\(--[[:alpha:]]*\).*/\1/' -e 'tx' -e 'd' -e ':x')"
     COMPREPLY=( ${COMPREPLY[@]:-} $(compgen -W "${options}" -- "${cur}") )
 }
 
