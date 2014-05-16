@@ -3,20 +3,20 @@
     Bash autocompletion for teamocil (https://github.com/remiprev/teamocil).
     Provides completion for available layouts:
 
-    $ teamocil<tab>
+  $ teamocil<tab>
     one     two     three
 
     Option completion available as well:
 
-    $ teamocil -<tab>
+  $ teamocil -<tab>
     --edit    --here    --layout  --list    --show
 
   ~ Installation
 
-    Include completion script into your `.bashrc` or `.bash_profile`.
+    Source completion script into your `.bashrc` or `.bash_profile`.
 
-    $ cd /path/to/repo
-    $ echo "source $(pwd)/contrib/completion.bash" >> ~/.bashrc
+  $ cd /path/to/repo
+  $ echo "source $(pwd)/contrib/completion.bash" >> ~/.bashrc
 
   ~ Copyright
 
